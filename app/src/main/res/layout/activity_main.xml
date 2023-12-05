@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="Log In"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnLogout"
+        app:layout_constraintEnd_toStartOf="@+id/btnLogout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnLogout" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="25dp"
+        android:text="Log Out"
+        app:layout_constraintBottom_toTopOf="@+id/btnChangePassword"
+        app:layout_constraintEnd_toStartOf="@+id/btnRegister"
+        app:layout_constraintStart_toEndOf="@+id/btnLogin" />
+
+    <!--<Button
+        android:id="@+id/btnCharacters"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:text="Characters"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnArtifacts"
+        app:layout_constraintEnd_toEndOf="@+id/btnCreateBuild" />-->
+
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Change Password"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmitGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="38dp"
+        android:text="Video Game Tracker"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<Button
+        android:id="@+id/btnArtifacts"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="325dp"
+        android:text="Artifacts"
+        app:layout_constraintStart_toEndOf="@+id/btnCharacters"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <Button
+        android:id="@+id/btnSubmitGame"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="35dp"
+        android:text="Submit Game"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnGames"
+        app:layout_constraintEnd_toStartOf="@+id/btnGames"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGames"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="120dp"
+        android:text="View Games"
+        app:layout_constraintBottom_toTopOf="@+id/txtLoggedIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSubmitGame"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangePassword" />
+
+    <TextView
+        android:id="@+id/txtLoggedIn"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="80dp"
+        android:text="Currently not signed in."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtCp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtCp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:text="ADEV-3009 | Team 7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
